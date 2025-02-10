@@ -30,29 +30,45 @@ const root = createRoot(document.getElementById("root"));
 //     </div>
 //   </main>
 // );
+function Header() {
+  return (
+    <header>
+      <img src={reactLogo} width="40px" alt="React Logo" />
+    </header>
+  );
+}
 
+function MainContent() {
+  return (
+    <main>
+      <h1 class="text-3xl">Reason I am excited to learn React</h1>
+      <ol>
+        <li>
+          React is a popular library, so I will be able to fit in with all the
+          coolest devs out there! 😎
+        </li>
+        <li>
+          I am more likely to get a job as front end developer if I know React
+        </li>
+      </ol>
+    </main>
+  );
+}
+
+function Footer() {
+  return (
+    <footer>
+      <small>© 2024 David Sutanto. All rights reserved</small>
+    </footer>
+  );
+}
 //Challenge 2 :
 function Page() {
   return (
     <Fragment>
-      <header>
-        <img src={reactLogo} width="40px" alt="React Logo" />
-      </header>
-      <main>
-        <h1>Reason I am excited to learn React</h1>
-        <ol>
-          <li>
-            React is a popular library, so I will be able to fit in with all the
-            coolest devs out there! 😎
-          </li>
-          <li>
-            I am more likely to get a job as front end developer if I know React
-          </li>
-        </ol>
-      </main>
-      <footer>
-        <small>© 2024 David Sutanto. All rights reserved</small>
-      </footer>
+      <Header />
+      <MainContent />
+      <Footer />
     </Fragment>
   );
 }
